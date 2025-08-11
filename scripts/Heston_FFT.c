@@ -40,8 +40,8 @@ void CallHestonFFT(double Spot, double Maturity, double kappa, double rho, doubl
                    double theta, double var0, double rate, double div,
                    double *Strikes, int numStrikes, double *CallPrices) {
 
-    int NN = 4096;
-    double alpha = 1.25;
+    int NN = 16384;
+    double alpha = 2.00;
     double cc = 1000.0;
     double eta = cc / NN;
     double Lambda = (2.0 * M_PI) / (NN * eta);
@@ -106,16 +106,4 @@ void CallHestonFFT(double Spot, double Maturity, double kappa, double rho, doubl
     free(CallValues);
     free(ku);
     free(NewPhi);
-}
-
-
-int main(){
-    int NNStrikes = 10;
-    double Strikes[NNStrikes], prices[NNStrikes];
-    for(int i=0; i< NNStrikes; i++)
-        Strikes[i] = 100 + (i-5)*5;
-    CallHestonFFT(100.0, 1.0, 1.5,-0.4, 0.4, 0.03, 0.014,0.02,  0, Strikes, NNStrikes, prices);
-    for(int j=0; j< NNStrikes; j++)
-        printf("%lf\t%lf\n", Strikes[j],prices[j]);
-    return 0;
 }
