@@ -1,4 +1,4 @@
-\# Beyond Black-Scholes: A Journey into Stochastic Volatility with the Heston Model and Real Market Calibration
+# Beyond Black-Scholes: A Journey into Stochastic Volatility with the Heston Model and Real Market Calibration
 
 
 
@@ -14,7 +14,7 @@ This project investigates the performance of the Heston stochastic volatility mo
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -30,7 +30,7 @@ This project investigates the performance of the Heston stochastic volatility mo
 
 
 
-\## Goals
+## Goals
 
 
 
@@ -38,7 +38,7 @@ This project investigates the performance of the Heston stochastic volatility mo
 
 
 
-\## Getting started
+## Getting started
 
 
 
@@ -109,6 +109,5 @@ References:
 
 
 
-
-\\\* Project by Juan Castillo \*\\
+* Project by Juan Castillo *
 
